@@ -335,39 +335,46 @@
           </div>
         </div>
       </div>
-      <div
-        class="container grid grid--1x2__contact__message"
-        data-aos="zoom-in"
-      >
-        <input
-          type="text"
-          class="input contact__message_input"
-          placeholder="Your Name"
-          required
-        />
-        <input
-          type="email"
-          class="input contact__message_input"
-          placeholder="Your Email"
-          required
-        />
-      </div>
-      <div class="container grid grid__contact__message" data-aos="zoom-in">
-        <input
-          type="text"
-          class="input contact__message_input"
-          placeholder="Your Subject"
-          required
-        />
-        <textarea
-          name="textarea"
-          cols="30"
-          rows="10"
-          class="input input--area contact__message_input--area"
-          placeholder="Your Message"
-        ></textarea>
-        <a href="" class="btn btn--fill contact__message__btn">Send Message</a>
-      </div>
+      <form action="https://formspree.io/f/mpznzwbl" method="POST">
+        <div
+          class="container grid grid--1x2__contact__message"
+          data-aos="zoom-in"
+        >
+          <input
+            type="text"
+            name="name"
+            class="input contact__message_input"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="input contact__message_input"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+        <div class="container grid grid__contact__message" data-aos="zoom-in">
+          <input
+            type="text"
+            name="subject"
+            class="input contact__message_input"
+            placeholder="Your Subject"
+            required
+          />
+          <textarea
+            name="msg"
+            cols="30"
+            rows="10"
+            class="input input--area contact__message_input--area"
+            placeholder="Your Message"
+          ></textarea>
+          <button type="submit" class="btn btn--fill contact__message__btn">
+            Send Message
+          </button>
+        </div>
+      </form>
     </section>
     <footer class="block block--primary footer">
       <div class="container container--footer">
@@ -396,6 +403,7 @@
       </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
