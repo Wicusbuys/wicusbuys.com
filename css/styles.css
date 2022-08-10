@@ -286,8 +286,9 @@ a {
   box-shadow: 0 0 20px 10px #1a1c2e;
   padding: 2.5rem;
   transition-duration: 0.4s;
-  max-width: 300px;
+  max-width: 320px;
   margin: 2rem auto;
+  min-height: 430px;
 }
 
 .tile:hover {
@@ -312,6 +313,8 @@ a {
 
 .tile__body {
   color: var(--color-body);
+  font-size: 1.8rem;
+  text-align: left;
 }
 
 /*------------------------------------------------------
@@ -655,7 +658,7 @@ a {
 
   .tile--interest {
     margin: 2rem;
-    max-width: 300px;
+    max-width: 340px;
   }
 }
 
@@ -666,8 +669,8 @@ a {
   }
 
   .tile--interest {
-    margin: 4rem;
-    max-width: 300px;
+    margin: 4rem 2rem;
+    max-width: 350px;
   }
 }
 
