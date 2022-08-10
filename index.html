@@ -335,7 +335,12 @@
           </div>
         </div>
       </div>
-      <form action="https://formspree.io/f/mpznzwbl" method="POST">
+      <form
+        name="contact"
+        action="/pages/success"
+        method="POST"
+        data-netlify="true"
+      >
         <div class="container grid grid--1x2__contact__message">
           <input
             type="text"
@@ -364,7 +369,7 @@
             data-aos="zoom-in"
           />
           <textarea
-            name="msg"
+            name="message"
             cols="30"
             rows="10"
             class="input input--area contact__message_input--area"
