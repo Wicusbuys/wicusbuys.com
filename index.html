@@ -336,16 +336,14 @@
         </div>
       </div>
       <form action="https://formspree.io/f/mpznzwbl" method="POST">
-        <div
-          class="container grid grid--1x2__contact__message"
-          data-aos="zoom-in"
-        >
+        <div class="container grid grid--1x2__contact__message">
           <input
             type="text"
             name="name"
             class="input contact__message_input"
             placeholder="Your Name"
             required
+            data-aos="zoom-in"
           />
           <input
             type="email"
@@ -353,15 +351,17 @@
             class="input contact__message_input"
             placeholder="Your Email"
             required
+            data-aos="zoom-in"
           />
         </div>
-        <div class="container grid grid__contact__message" data-aos="zoom-in">
+        <div class="container grid grid__contact__message">
           <input
             type="text"
             name="subject"
             class="input contact__message_input"
             placeholder="Your Subject"
             required
+            data-aos="zoom-in"
           />
           <textarea
             name="msg"
@@ -369,8 +369,14 @@
             rows="10"
             class="input input--area contact__message_input--area"
             placeholder="Your Message"
+            required
+            data-aos="zoom-in"
           ></textarea>
-          <button type="submit" class="btn btn--fill contact__message__btn">
+          <button
+            type="submit"
+            class="btn btn--fill contact__message__btn"
+            data-aos="zoom-in"
+          >
             Send Message
           </button>
         </div>
