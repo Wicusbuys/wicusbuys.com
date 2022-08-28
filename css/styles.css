@@ -55,7 +55,7 @@ html {
 }
 
 body {
-  background: var(--color-secondary);
+  background: var(--color-primary);
   color: var(--color-body);
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 2rem;
@@ -141,6 +141,31 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.nav__link {
+  color: var(--color-accent);
+  position: relative;
+  text-decoration: none;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: var(--color-accent);
+  bottom: -5px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav__link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 /*------------------------------------------------------
@@ -455,7 +480,6 @@ a {
 
 .nav__item {
   padding: 0.5rem 2rem;
-  border-bottom: 1px solid rgb(58, 57, 57);
   font-size: 2rem;
   font-weight: 600;
 }
@@ -484,10 +508,35 @@ a {
 }
 
 .nav__brand {
-  transform: translateY(4px);
+  display: flex;
+  justify-content: center;
+  height: 5rem;
 }
 
-@media screen and (min-width: 768px) {
+.nav__brand__text {
+  margin: 0;
+  align-self: center;
+  padding-left: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.nav__btn {
+  margin: 1rem 0 0;
+  height: 3rem;
+  padding: 0 2rem;
+  align-self: center;
+  font-size: 2rem;
+  color: var(--color-body);
+  border-radius: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    padding: 2rem 10rem;
+  }
+
   .nav__toggler {
     display: none;
   }
@@ -502,6 +551,21 @@ a {
 
   .nav__item {
     border: 0;
+  }
+
+  .nav__link::after {
+    content: "/";
+    color: #bababa !important;
+    position: absolute;
+    padding-left: 1.5rem;
+  }
+
+  .nav__item:last-child .nav__link::after {
+    display: none;
+  }
+
+  .nav__btn {
+    margin: 0 0 0 2rem;
   }
 }
 
@@ -546,6 +610,7 @@ a {
 ------------------------------------------------------ */
 .hero {
   margin-top: 90px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
 
 .hero__container {
@@ -576,6 +641,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+  }
   .hero__container {
     padding: 0 10rem;
   }
@@ -592,6 +660,10 @@ a {
 /*------------------------------------------------------
 # About me
 ------------------------------------------------------ */
+
+.about__desc {
+  padding: 0;
+}
 
 .about__content {
   text-align: left;
@@ -810,19 +882,19 @@ a {
   margin: 0 5%;
 }
 
-.nav__brand {
+.footer__brand {
   display: flex;
   justify-content: center;
+  height: 5rem;
   transform: translateX(-10px);
 }
 
-.footer__brand {
-  display: inline;
-  max-width: 100%;
-  text-align: center;
-  overflow: hidden;
-  margin: 0 -5rem;
-  vertical-align: middle;
+.footer__brand__text {
+  margin: 0;
+  align-self: center;
+  padding-left: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .footer__desc {

@@ -36,18 +36,25 @@
       <nav class="nav collapsible">
         <a class="nav__brand" href="#top">
           <img src="images/logo.svg" alt="" />
+          <p class="nav__brand__text">Wicus Buys</p>
         </a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="#about">About me</a></li>
-          <li class="nav__item"><a href="#interests">Interests</a></li>
-          <li class="nav__item"><a href="#skills">Skills</a></li>
-          <li class="nav__item"><a href="#contact">Contact</a></li>
           <li class="nav__item">
-            <a href="" download>My CV </a>
+            <a class="nav__link" href="#about">About me</a>
           </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#interests">Interests</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#skills">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact</a>
+          </li>
+          <a class="btn btn--fill nav__btn" href="" download="">Resume</a>
         </ul>
       </nav>
     </header>
@@ -81,12 +88,12 @@
           <p class="hero__tagline">
             Software Engineering student and tech enthusiast.
           </p>
-          <a href="#about" class="btn btn--outline hero__btn">About me</a>
+          <a href="#skills" class="btn btn--outline hero__btn">My Skills</a>
         </header>
       </div>
     </section>
     <section id="about" class="block block--primary about">
-      <div class="container desc" data-aos="zoom-in-up">
+      <div class="container desc about__desc" data-aos="zoom-in-up">
         <header class="block__header">
           <h1 class="desc__header">About Me</h1>
           <p class="desc__text">
@@ -391,8 +398,9 @@
     </section>
     <footer class="block block--primary footer">
       <div class="container container--footer">
-        <a class="nav__brand" href="#top"
-          ><img src="images/logo.svg" alt="" />
+        <a class="footer__brand" href="#top">
+          <img src="images/logo.svg" alt="" />
+          <p class="footer__brand__text">Wicus Buys</p>
         </a>
         <p class="footer__desc"></p>
         <div class="footer__social">
