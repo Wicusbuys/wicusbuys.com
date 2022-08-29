@@ -685,6 +685,8 @@ a {
   font-weight: 300;
   letter-spacing: 1px;
   margin: 4rem 0;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .about__image {
@@ -729,6 +731,10 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 10rem);
     row-gap: 1rem;
+    text-align: left;
+  }
+
+  .about__text {
     text-align: left;
   }
 }
@@ -779,6 +785,8 @@ a {
   font-weight: 300;
   letter-spacing: 1px;
   margin: 4rem 0;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .block-skills__list {
@@ -808,6 +816,7 @@ a {
 
   .skills__tagline {
     font-size: 2rem;
+    text-align: left;
   }
 
   .block-skills__list {
