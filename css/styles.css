@@ -611,12 +611,22 @@ a {
 .hero {
   margin-top: 90px;
   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+  background: url(/images/background.svg) no-repeat;
+  background-color: var(--color-secondary);
+  background-size: cover;
+  padding-top: 0;
+  background-position: 30% 50%;
 }
 
 .hero__container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 90vh;
+}
+
+.hero__content {
+  padding: 1rem 0;
 }
 
 .hero__header {
@@ -646,10 +656,7 @@ a {
   }
   .hero__container {
     padding: 0 10rem;
-  }
-
-  .hero__content {
-    text-align: left;
+    justify-content: center;
   }
 
   .hero__image {
